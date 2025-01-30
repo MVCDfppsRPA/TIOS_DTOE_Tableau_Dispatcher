@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1513,820</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1513,3326</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Initialization_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -144,7 +144,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="DTOE_RPAbot24_Creds" CacheStrategy="None" DisplayName="Get Credential" FolderPath="FPPS/DTOE" sap:VirtualizedContainerService.HintSize="530,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[Password]" Username="[Username]" />
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Text="[Username]" Version="V3">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Tableau 'Username' Field" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Text="[Username]" Version="V3">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/signin?disableAutoSignin=yes" DesignTimeRectangle="682, 315, 300, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Username' name='username' type='text' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Username' name='username' type='text' /&gt;" Guid="8a1cc0f0-4680-4e53-9b43-34caeadf2d84" InformativeScreenshot="7b09de6ae14a958d4bfa886ac52bfa5f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tableau Server' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -165,7 +165,7 @@
                   </uix:VerifyExecutionTypeIntoOptions>
                 </uix:NTypeInto.VerifyOptions>
               </uix:NTypeInto>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" SecureText="[Password]" Version="V3">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Tableau 'Password' Field" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" SecureText="[Password]" Version="V3">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/signin?disableAutoSignin=yes" DesignTimeRectangle="682, 382, 300, 34" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Password' name='password' type='password' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Password' name='password' type='password' /&gt;" Guid="744552c6-bf54-443f-8f75-f02e3ae8b276" ImageBase64="" InformativeScreenshot="999bb8a3fa53f86506e2f968c62bb782.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tableau Server' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -186,7 +186,7 @@
                   </uix:VerifyExecutionTypeIntoOptions>
                 </uix:NTypeInto.VerifyOptions>
               </uix:NTypeInto>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign In'" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign In' Button" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/signin?disableAutoSignin=yes" DesignTimeRectangle="712, 434, 224, 48" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='Sign In' innertext='Sign In' visibleinnertext='Sign In' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aaname='Sign In' innertext='Sign In' visibleinnertext='Sign In' type='submit' check:text='Sign In' /&gt;" Guid="561ceaa5-566b-47a0-bd47-a6ce714ba75b" ImageBase64="" InformativeScreenshot="e9d719007707e115e1f8f9d0065f0156.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tableau Server' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
