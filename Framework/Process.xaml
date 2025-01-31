@@ -263,7 +263,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,177" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;File Exists in Shared Path&quot;]" />
-                  <ui:RenameFileX DisplayName="Rename File" FilePath="[path.Combine(in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString,&quot;detail export.csv&quot;)]" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="RenameFileX_1" KeepExtension="False" NewName="[in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString+&quot;/detail export_&quot; + Today.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.xlsx&quot;]" />
+                  <ui:RenameFileX DisplayName="Rename File for UseCase1" FilePath="[path.Combine(in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString,&quot;detail export.csv&quot;)]" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="RenameFileX_1" KeepExtension="False" NewName="[in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString+&quot;/detail export_&quot; + Today.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.xlsx&quot;]" />
                 </Sequence>
               </If.Then>
               <If.Else>
@@ -382,7 +382,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,177" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;File Exists in Shared Path&quot;]" />
-                  <ui:RenameFileX DisplayName="Rename File" FilePath="[path.Combine(in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString,&quot;DTOE table.csv&quot;)]" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="RenameFileX_2" KeepExtension="False" NewName="[in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString+&quot;/DTOE table_&quot; + Today.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.xlsx&quot;]" />
+                  <ui:RenameFileX DisplayName="Rename File for UseCase2" FilePath="[path.Combine(in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString,&quot;DTOE table.csv&quot;)]" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="RenameFileX_2" KeepExtension="False" NewName="[in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString+&quot;/DTOE table_&quot; + Today.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.xlsx&quot;]" />
                 </Sequence>
               </If.Then>
               <If.Else>
