@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1513,5782</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1513,6116</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -122,7 +122,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="688,6051" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="688,5996" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:UiElement" Name="outputElement">
         <sap:WorkflowViewStateService.ViewState>
@@ -142,14 +142,14 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="626,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
-    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="626,88" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
-    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser Edge: Home - Tableau Server" sap:VirtualizedContainerService.HintSize="626,5466" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6fed3f89-81f2-4948-bb0d-fbc181c96141" Version="V2">
+    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="626,89" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
+    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser Edge: Home - Tableau Server" sap:VirtualizedContainerService.HintSize="626,5410" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6fed3f89-81f2-4948-bb0d-fbc181c96141" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,5217" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,5161" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="DTOE_FilePathName1" />
               <Variable x:TypeArguments="x:String" Name="DTOE_FilePathName2" />
@@ -256,7 +256,7 @@
             </ui:LogMessage>
             <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="530,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
             <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[bool_fileexists]" sap:VirtualizedContainerService.HintSize="530,147" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString+&quot;\&quot;+&quot;detail export.csv&quot;]" PathType="File" />
-            <If Condition="[bool_fileexists]" sap:VirtualizedContainerService.HintSize="530,914" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[bool_fileexists]" DisplayName="If Condition for UseCase1 - Physician Notifications" sap:VirtualizedContainerService.HintSize="530,914" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
                 <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,543" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
@@ -383,7 +383,7 @@
             </ui:LogMessage>
             <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="530,122" sap2010:WorkflowViewState.IdRef="Delay_3" />
             <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[bool_fileexists]" sap:VirtualizedContainerService.HintSize="530,147" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString+&quot;\&quot;+&quot;DTOE table.csv&quot;]" PathType="File" />
-            <If Condition="[bool_fileexists]" sap:VirtualizedContainerService.HintSize="530,794" sap2010:WorkflowViewState.IdRef="If_2">
+            <If Condition="[bool_fileexists]" DisplayName="If Condition for UseCase2 - CMD Notifications" sap:VirtualizedContainerService.HintSize="530,738" sap2010:WorkflowViewState.IdRef="If_2">
               <If.Then>
                 <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,543" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
@@ -404,7 +404,7 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,81" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
