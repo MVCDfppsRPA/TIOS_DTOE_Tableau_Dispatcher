@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1128.8,9771.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1513,9879</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -123,7 +123,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="786.4,9706.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="786,9814" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:UiElement" Name="outputElement">
         <sap:WorkflowViewStateService.ViewState>
@@ -142,15 +142,15 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="724,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="724,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
     <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="724,88" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: New tab" sap:VirtualizedContainerService.HintSize="724,8942.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: New tab" sap:VirtualizedContainerService.HintSize="724,9056" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="689.6,8693.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="690,8807" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Default="sv_rpabot24" Name="Username" />
               <Variable x:TypeArguments="ss:SecureString" Name="Password" />
@@ -163,16 +163,17 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="DTOE_RPAbot24_Creds" CacheStrategy="None" DisplayName="Get Credential" FolderPath="FPPS/DTOE" sap:VirtualizedContainerService.HintSize="627.2,175.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[Password]" Username="[Username]" />
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="627.2,436.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="628,57" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="DTOE_RPAbot24_Creds" CacheStrategy="None" DisplayName="Get Credential" FolderPath="FPPS/DTOE" sap:VirtualizedContainerService.HintSize="628,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[Password]" Username="[Username]" />
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="628,437" sap2010:WorkflowViewState.IdRef="CommentOut_1">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,326.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,326" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayBefore="2" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="353.6,237.6" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(esc)][u(hk)]" Version="V3">
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayBefore="2" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="354,238" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(esc)][u(hk)]" Version="V3">
                     <uix:NKeyboardShortcuts.VerifyOptions>
                       <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
                         <uix:VerifyExecutionOptions.Retry>
@@ -187,7 +188,7 @@
                 </Sequence>
               </ui:CommentOut.Body>
             </ui:CommentOut>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Tableau 'Username' Field" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="627.2,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Text="[Username]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Tableau 'Username' Field" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="628,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Text="[Username]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/signin?disableAutoSignin=yes" DesignTimeRectangle="682, 315, 300, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Username' name='username' type='text' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Username' name='username' type='text' /&gt;" Guid="8a1cc0f0-4680-4e53-9b43-34caeadf2d84" InformativeScreenshot="7b09de6ae14a958d4bfa886ac52bfa5f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tableau Server' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -208,7 +209,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Tableau 'Password' Field" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="627.2,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" SecureText="[Password]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Tableau 'Password' Field" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="628,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" SecureText="[Password]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/signin?disableAutoSignin=yes" DesignTimeRectangle="682, 382, 300, 34" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Password' name='password' type='password' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Password' name='password' type='password' /&gt;" Guid="744552c6-bf54-443f-8f75-f02e3ae8b276" ImageBase64="" InformativeScreenshot="999bb8a3fa53f86506e2f968c62bb782.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tableau Server' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -229,7 +230,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign In' Button" sap:VirtualizedContainerService.HintSize="627.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign In' Button" sap:VirtualizedContainerService.HintSize="628,225" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/signin?disableAutoSignin=yes" DesignTimeRectangle="712, 434, 224, 48" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='Sign In' innertext='Sign In' visibleinnertext='Sign In' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aaname='Sign In' innertext='Sign In' visibleinnertext='Sign In' type='submit' check:text='Sign In' /&gt;" Guid="561ceaa5-566b-47a0-bd47-a6ce714ba75b" ImageBase64="" InformativeScreenshot="e9d719007707e115e1f8f9d0065f0156.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tableau Server' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -244,29 +245,29 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NGetText DisplayName="Get Text 'Home'" sap:VirtualizedContainerService.HintSize="627.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" TextString="[str_Heading]" Version="V3">
+            <uix:NGetText DisplayName="Get Text 'Home'" sap:VirtualizedContainerService.HintSize="628,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" TextString="[str_Heading]" Version="V3">
               <uix:NGetText.Target>
                 <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/site/QA/home" DesignTimeRectangle="323, 198, 1562, 24" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' aaname='Home' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' /&gt;" Guid="9c7582d6-6ad9-41fe-b177-d52bfdcb9371" ImageBase64="" InformativeScreenshot="3a20fd7c0c7e70700dd491f1d86821d7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home - Tableau Server' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
               </uix:NGetText.Target>
             </uix:NGetText>
-            <If Condition="[str_Heading.equals(&quot;Home&quot;)]" sap:VirtualizedContainerService.HintSize="627.2,1290.4" sap2010:WorkflowViewState.IdRef="If_3">
+            <If Condition="[str_Heading.equals(&quot;Home&quot;)]" sap:VirtualizedContainerService.HintSize="628,1286" sap2010:WorkflowViewState.IdRef="If_3">
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="593.6,560" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="594,558" sap2010:WorkflowViewState.IdRef="Sequence_10">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="531.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Tableau Login Successful&quot;]" />
-                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="531.2,295.2" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="532,175" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Tableau Login Successful&quot;]" />
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532,295" sap2010:WorkflowViewState.IdRef="CommentOut_2">
                     <ui:CommentOut.Body>
-                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_12">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_3">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Boolean">[out_bool_login]</OutArgument>
                           </Assign.To>
@@ -280,22 +281,22 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="593.6,560" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="594,558" sap2010:WorkflowViewState.IdRef="Sequence_11">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="531.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Tableau Login Failed&quot;]" />
-                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="531.2,295.2" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="532,175" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Tableau Login Failed&quot;]" />
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532,295" sap2010:WorkflowViewState.IdRef="CommentOut_3">
                     <ui:CommentOut.Body>
-                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_13">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_4">
+                        <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_4">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Boolean">[out_bool_login]</OutArgument>
                           </Assign.To>
@@ -309,7 +310,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="627.2,5712.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="628,5776" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="DTOE_FilePathName1" />
                 <Variable x:TypeArguments="x:String" Name="DTOE_FilePathName2" />
@@ -321,7 +322,7 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DTOE Provider List Table'" sap:VirtualizedContainerService.HintSize="529.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DTOE Provider List Table'" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/site/QA/home" DesignTimeRectangle="325, 328, 300, 186" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aria-label=' DTOE Provider List (new)' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label=' DTOE Provider List (new)' tag='A' type='' class='CardView_thumbnail-focus_f9jc37y CardView_thumbnail-preloaded_f1vpb8ks' aaname='' /&gt;" Guid="541dfc92-9a8a-47ad-ba45-1db6ab9d1b5e" InformativeScreenshot="f485a09a7f3d8b39a164a58b7e951ee8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home - Tableau Server' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
@@ -336,9 +337,9 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export' Type Icon" sap:VirtualizedContainerService.HintSize="529.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export' Type Icon" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
                 <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/uwmedxauvxvt/Development/orchestrator_/assets?tid=9863&amp;fid=1407598&amp;index=0&amp;size=20&amp;state=M4ewTgLgPgZglgUwDYBMoDsCGBbBUVxgIDGEcI6UmwxAevQCQAMUDAjFAExQDMUALAF1BQA%3D" DesignTimeRectangle="1382, 152, 49, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' innertext='Download' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' innertext='Download' type='' class='dropdown-button fnpu4hw' aaname='Download' check:text='Download' /&gt;" Guid="c5bb7fdf-a1e5-4e96-8876-42c762ea189d" InformativeScreenshot="e357a6634f16e4902177cf919aaf160f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UWP* - Tableau Server' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/uwmedxauvxvt/Development/orchestrator_/assets?tid=9863&amp;fid=1407598&amp;index=0&amp;size=20&amp;state=M4ewTgLgPgZglgUwDYBMoDsCGBbBUVxgIDGEcI6UmwxAevQCQAMUDAjFAExQDMUALAF1BQA%3D" DesignTimeRectangle="1718, 152, 49, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='Download' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aaname='Download' type='' class='dropdown-button fnpu4hw' check:text='Download' /&gt;" Guid="c5bb7fdf-a1e5-4e96-8876-42c762ea189d" InformativeScreenshot="f6f9fa08245bf0d266e6b1779e1c28c5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UWP* - Tableau Server' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
                 <uix:NClick.VerifyOptions>
                   <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -351,7 +352,7 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Crosstab' Type" sap:VirtualizedContainerService.HintSize="529.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Crosstab' Type" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/site/QA/views/UWPIncompleteEncountersandOpNotes/DTOEProviderListnew?:iid=1" DesignTimeRectangle="1748, 259, 64, 30" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl src='https://tabdev.uwmedicine.org/t/QA/views/UWPIncompleteEncountersandOpNotes/DTOEProviderListnew?:embed=y&amp;amp;:showVizHome=n&amp;amp;:toolbar=top&amp;amp;%3AopenAuthoringInTopWindow=true&amp;amp;%3AbrowserBackButtonUndo=true&amp;amp;%3AcommentingEnabled=true&amp;amp;%3AreloadOnCustomViewSave=true&amp;amp;%3AshowAppBanner=false&amp;amp;%3AisVizPortal=true&amp;amp;:apiID=host0#navType=0&amp;amp;navSrc=Opt' tag='IFRAME' /&gt;&lt;webctrl aaname='Crosstab' class='frvoegc' parentid='viz-viewer-toolbar-download-menu' tag='SPAN' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl src='https://tabdev.uwmedicine.org/t/QA/views/UWPIncompleteEncountersandOpNotes/DTOEProviderListnew?:embed=y&amp;amp;:showVizHome=n&amp;amp;:toolbar=top&amp;amp;%3AopenAuthoringInTopWindow=true&amp;amp;%3AbrowserBackButtonUndo=true&amp;amp;%3AcommentingEnabled=true&amp;amp;%3AreloadOnCustomViewSave=true&amp;amp;%3AshowAppBanner=false&amp;amp;%3AisVizPortal=true&amp;amp;:apiID=host0#navType=0&amp;amp;navSrc=Opt' tag='IFRAME' /&gt;&lt;webctrl aaname='Crosstab' class='frvoegc' parentid='viz-viewer-toolbar-download-menu' tag='SPAN' type='' check:text='Crosstab' /&gt;" Guid="9082099c-d44d-4ef8-9fca-cde66642406d" InformativeScreenshot="153c2d924e7d7c597a1ddda573bb391f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UWP* - Tableau Server' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -372,7 +373,7 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CSV' Format Type" sap:VirtualizedContainerService.HintSize="529.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CSV' Format Type" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/site/QA/views/UWPIncompleteEncountersandOpNotes/DTOEProviderListnew?:iid=1" CVScreenId="12d2379e-4073-4d26-8c2a-e7a969aab4fe" CvElementArea="700, 629, 19, 18" CvTextArea="721, 631, 25, 12" CvTextArgument="CSV" CvType="RadioButton" DesignTimeRectangle="702, 628, 44, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' innertext='CSV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' innertext='CSV' type='' class='f5n9tnv f13jfazc fvgneh5 suppressClickBusting fioqf8z radio checked enabled focus-visible' aaname='' check:text='checked' /&gt;" Guid="eabcb86d-a7e3-4602-b5c5-86d8c109369b" InformativeScreenshot="c9b3681f1727e2c76ba8e3d869dbaa71.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UWP* - Tableau Server' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -393,7 +394,7 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Download' Button" sap:VirtualizedContainerService.HintSize="529.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" OutUiElement="[outputElement]" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Download' Button" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" OutUiElement="[outputElement]" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/site/QA/views/UWPIncompleteEncountersandOpNotes/DTOEProviderListnew?:iid=1" DesignTimeRectangle="1092, 814, 107, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl src='https://tabdev.uwmedicine.org/t/QA/views/UWPIncompleteEncountersandOpNotes/DTOEProviderListnew?:embed=y&amp;amp;:showVizHome=n&amp;amp;:toolbar=top&amp;amp;%3AopenAuthoringInTopWindow=true&amp;amp;%3AbrowserBackButtonUndo=true&amp;amp;%3AcommentingEnabled=true&amp;amp;%3AreloadOnCustomViewSave=true&amp;amp;%3AshowAppBanner=false&amp;amp;%3AisVizPortal=true&amp;amp;:apiID=host*#navType=0&amp;amp;navSrc=Opt' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' aaname='Download' idx='2' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl src='https://tabdev.uwmedicine.org/t/QA/views/UWPIncompleteEncountersandOpNotes/DTOEProviderListnew?:embed=y&amp;amp;:showVizHome=n&amp;amp;:toolbar=top&amp;amp;%3AopenAuthoringInTopWindow=true&amp;amp;%3AbrowserBackButtonUndo=true&amp;amp;%3AcommentingEnabled=true&amp;amp;%3AreloadOnCustomViewSave=true&amp;amp;%3AshowAppBanner=false&amp;amp;%3AisVizPortal=true&amp;amp;:apiID=host*#navType=0&amp;amp;navSrc=Opt' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' aaname='Download' type='' class='fc9tep5 low-density' check:text='Download' /&gt;" Guid="03efa73b-1078-413c-ae3b-422c2f250673" InformativeScreenshot="32eb8a5d934866d60931aa1997d631c7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UWP Incomplete Encounters and Op Notes: DTOE Provider List (new) - Tableau Server' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
@@ -408,25 +409,25 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <ui:LogMessage sap2010:Annotation.AnnotationText="" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="529.6,207.2" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;NetworkSharedPath Exists&quot; +in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString+&quot;/&quot;+&quot;detail export.csv&quot;]">
+              <ui:LogMessage sap2010:Annotation.AnnotationText="" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="530,206" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;NetworkSharedPath Exists&quot; +in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString+&quot;/&quot;+&quot;detail export.csv&quot;]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
-              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="529.6,122.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
-              <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[bool_fileexists]" sap:VirtualizedContainerService.HintSize="529.6,148" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString+&quot;\&quot;+&quot;detail export.csv&quot;]" PathType="File" />
-              <If Condition="[bool_fileexists]" DisplayName="If Condition for UseCase1 - Physician Notifications" sap:VirtualizedContainerService.HintSize="529.6,918.4" sap2010:WorkflowViewState.IdRef="If_1">
+              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="530,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[bool_fileexists]" sap:VirtualizedContainerService.HintSize="530,147" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString+&quot;\&quot;+&quot;detail export.csv&quot;]" PathType="File" />
+              <If Condition="[bool_fileexists]" DisplayName="If Condition for UseCase1 - Physician Notifications" sap:VirtualizedContainerService.HintSize="530,914" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Then>
-                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,545.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,543" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;File Exists in Shared Path&quot;]" />
-                    <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;File Exists in Shared Path&quot;]" />
+                    <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[str_DetailReport_FilePath]</OutArgument>
                       </Assign.To>
@@ -434,21 +435,21 @@
                         <InArgument x:TypeArguments="x:String">[in_Config("DTOE_NetworkSharePath").ToString+"/detail export_" + Today.ToString("yyyy-MM-dd") + ".csv"]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:RenameFileX DisplayName="Rename File for UseCase1" FilePath="[path.Combine(in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString,&quot;detail export.csv&quot;)]" sap:VirtualizedContainerService.HintSize="433.6,167.2" sap2010:WorkflowViewState.IdRef="RenameFileX_1" KeepExtension="False" NewName="[str_DetailReport_FilePath]" />
+                    <ui:RenameFileX DisplayName="Rename File for UseCase1" FilePath="[path.Combine(in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString,&quot;detail export.csv&quot;)]" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="RenameFileX_1" KeepExtension="False" NewName="[str_DetailReport_FilePath]" />
                   </Sequence>
                 </If.Then>
                 <If.Else>
-                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,202.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,201" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Throw Exception="[new BusinessRuleException(&quot;File Does Not Exist in Shared Path&quot;)]" sap:VirtualizedContainerService.HintSize="353.6,113.6" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                    <Throw Exception="[new BusinessRuleException(&quot;File Does Not Exist in Shared Path&quot;)]" sap:VirtualizedContainerService.HintSize="354,113" sap2010:WorkflowViewState.IdRef="Throw_1" />
                   </Sequence>
                 </If.Else>
               </If>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export' Type Icon" sap:VirtualizedContainerService.HintSize="529.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export' Type Icon" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/uwmedxauvxvt/Development/orchestrator_/assets?tid=9863&amp;fid=1407598&amp;index=0&amp;size=20&amp;state=M4ewTgLgPgZglgUwDYBMoDsCGBbBUVxgIDGEcI6UmwxAevQCQAMUDAjFAExQDMUALAF1BQA%3D" DesignTimeRectangle="1382, 152, 49, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' innertext='Download' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' innertext='Download' type='' class='dropdown-button fnpu4hw' aaname='Download' check:text='Download' /&gt;" Guid="c5bb7fdf-a1e5-4e96-8876-42c762ea189d" InformativeScreenshot="e357a6634f16e4902177cf919aaf160f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UWP* - Tableau Server' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
@@ -463,7 +464,7 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Crosstab' Type" sap:VirtualizedContainerService.HintSize="529.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Crosstab' Type" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/site/QA/views/UWPIncompleteEncountersandOpNotes/DTOEProviderListnew?:iid=1" DesignTimeRectangle="1748, 259, 64, 30" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl src='https://tabdev.uwmedicine.org/t/QA/views/UWPIncompleteEncountersandOpNotes/DTOEProviderListnew?:embed=y&amp;amp;:showVizHome=n&amp;amp;:toolbar=top&amp;amp;%3AopenAuthoringInTopWindow=true&amp;amp;%3AbrowserBackButtonUndo=true&amp;amp;%3AcommentingEnabled=true&amp;amp;%3AreloadOnCustomViewSave=true&amp;amp;%3AshowAppBanner=false&amp;amp;%3AisVizPortal=true&amp;amp;:apiID=host0#navType=0&amp;amp;navSrc=Opt' tag='IFRAME' /&gt;&lt;webctrl aaname='Crosstab' class='frvoegc' parentid='viz-viewer-toolbar-download-menu' tag='SPAN' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl src='https://tabdev.uwmedicine.org/t/QA/views/UWPIncompleteEncountersandOpNotes/DTOEProviderListnew?:embed=y&amp;amp;:showVizHome=n&amp;amp;:toolbar=top&amp;amp;%3AopenAuthoringInTopWindow=true&amp;amp;%3AbrowserBackButtonUndo=true&amp;amp;%3AcommentingEnabled=true&amp;amp;%3AreloadOnCustomViewSave=true&amp;amp;%3AshowAppBanner=false&amp;amp;%3AisVizPortal=true&amp;amp;:apiID=host0#navType=0&amp;amp;navSrc=Opt' tag='IFRAME' /&gt;&lt;webctrl aaname='Crosstab' class='frvoegc' parentid='viz-viewer-toolbar-download-menu' tag='SPAN' type='' check:text='Crosstab' /&gt;" Guid="9082099c-d44d-4ef8-9fca-cde66642406d" InformativeScreenshot="153c2d924e7d7c597a1ddda573bb391f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UWP* - Tableau Server' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -484,7 +485,7 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DTOE table'" sap:VirtualizedContainerService.HintSize="529.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DTOE table'" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/site/QA/views/UWPIncompleteEncountersandOpNotes/DTOEProviderListnew?:iid=1" CVScreenId="218f6c80-f1cd-4951-8eaa-bcaffdd3e409" CvTextArea="878, 520, 64, 12" CvTextArgument="DTOE table" CvType="Text" DesignTimeRectangle="869, 493, 235, 68" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl src='https://tabdev.uwmedicine.org/t/QA/views/UWPIncompleteEncountersandOpNotes/DTOEProviderListnew?:embed=y&amp;amp;:showVizHome=n&amp;amp;:toolbar=top&amp;amp;%3AopenAuthoringInTopWindow=true&amp;amp;%3AbrowserBackButtonUndo=true&amp;amp;%3AcommentingEnabled=true&amp;amp;%3AreloadOnCustomViewSave=true&amp;amp;%3AshowAppBanner=false&amp;amp;%3AisVizPortal=true&amp;amp;:apiID=host0#navType=0&amp;amp;navSrc=Opt' tag='IFRAME' /&gt;&lt;webctrl parentid='export-crosstab-options-dialog-Dialog-BodyWrapper-Dialog-Body-Id' tag='SPAN' aaname='DTOE table' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://tabdev.uwmedicine.org/t/QA/views/UWPIncompleteEncountersandOpNotes/DTOEProviderListnew?:embed=y&amp;amp;:showVizHome=n&amp;amp;:toolbar=top&amp;amp;%3AopenAuthoringInTopWindow=true&amp;amp;%3AbrowserBackButtonUndo=true&amp;amp;%3AcommentingEnabled=true&amp;amp;%3AreloadOnCustomViewSave=true&amp;amp;%3AshowAppBanner=false&amp;amp;%3AisVizPortal=true&amp;amp;:apiID=host0#navType=0&amp;amp;navSrc=Opt' tag='IFRAME' /&gt;&lt;webctrl parentid='export-crosstab-options-dialog-Dialog-BodyWrapper-Dialog-Body-Id' tag='SPAN' aaname='DTOE table' type='' class='thumbnail-title_f178rywr' check:text='DTOE table' /&gt;" Guid="9e0b53e2-abd7-4c72-8d12-2244a9c00a07" InformativeScreenshot="4161dedd52794a76be86cdb686012424.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UWP* - Tableau Server' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
@@ -499,7 +500,7 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CSV' Format Type" sap:VirtualizedContainerService.HintSize="529.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CSV' Format Type" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/site/QA/views/UWPIncompleteEncountersandOpNotes/DTOEProviderListnew?:iid=1" CVScreenId="12d2379e-4073-4d26-8c2a-e7a969aab4fe" CvElementArea="700, 629, 19, 18" CvTextArea="721, 631, 25, 12" CvTextArgument="CSV" CvType="RadioButton" DesignTimeRectangle="702, 628, 44, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' innertext='CSV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' innertext='CSV' type='' class='f5n9tnv f13jfazc fvgneh5 suppressClickBusting fioqf8z radio checked enabled focus-visible' aaname='' check:text='checked' /&gt;" Guid="eabcb86d-a7e3-4602-b5c5-86d8c109369b" InformativeScreenshot="c9b3681f1727e2c76ba8e3d869dbaa71.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UWP* - Tableau Server' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -520,7 +521,7 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Download'" sap:VirtualizedContainerService.HintSize="529.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Download'" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/site/QA/views/UWPIncompleteEncountersandOpNotes/DTOEProviderListnew?:iid=1" CVScreenId="cf1ccfbe-2531-4a08-8165-54de329b1540" CvElementArea="1090, 734, 110, 27" CvTextArea="1116, 740, 58, 12" CvTextArgument="Download" CvType="Button" DesignTimeRectangle="1092, 735, 107, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl src='https://tabdev.uwmedicine.org/t/QA/views/UWPIncompleteEncountersandOpNotes/DTOEProviderListnew?:embed=y&amp;amp;:showVizHome=n&amp;amp;:toolbar=top&amp;amp;%3AopenAuthoringInTopWindow=true&amp;amp;%3AbrowserBackButtonUndo=true&amp;amp;%3AcommentingEnabled=true&amp;amp;%3AreloadOnCustomViewSave=true&amp;amp;%3AshowAppBanner=false&amp;amp;%3AisVizPortal=true&amp;amp;:apiID=host0#navType=0&amp;amp;navSrc=Opt' tag='IFRAME' /&gt;&lt;webctrl parentid='export-crosstab-options-dialog-Dialog-BodyWrapper-Dialog-Body-Id' tag='BUTTON' aaname='Download' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://tabdev.uwmedicine.org/t/QA/views/UWPIncompleteEncountersandOpNotes/DTOEProviderListnew?:embed=y&amp;amp;:showVizHome=n&amp;amp;:toolbar=top&amp;amp;%3AopenAuthoringInTopWindow=true&amp;amp;%3AbrowserBackButtonUndo=true&amp;amp;%3AcommentingEnabled=true&amp;amp;%3AreloadOnCustomViewSave=true&amp;amp;%3AshowAppBanner=false&amp;amp;%3AisVizPortal=true&amp;amp;:apiID=host0#navType=0&amp;amp;navSrc=Opt' tag='IFRAME' /&gt;&lt;webctrl parentid='export-crosstab-options-dialog-Dialog-BodyWrapper-Dialog-Body-Id' tag='BUTTON' aaname='Download' type='' class='fc9tep5 low-density' check:text='Download' /&gt;" Guid="116971b5-7159-4463-bd97-88ce068bda4f" InformativeScreenshot="2307efe54583f08e56c6521e7db574f1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UWP Incomplete Encounters and Op Notes: DTOE Provider List (new) - Tableau Server' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
@@ -535,25 +536,25 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <ui:LogMessage sap2010:Annotation.AnnotationText="" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="529.6,207.2" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;NetworkSharedPath Exists&quot; +in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString+&quot;/&quot;+&quot;detail export.csv&quot;]">
+              <ui:LogMessage sap2010:Annotation.AnnotationText="" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="530,206" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;NetworkSharedPath Exists&quot; +in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString+&quot;/&quot;+&quot;detail export.csv&quot;]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
-              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="529.6,122.4" sap2010:WorkflowViewState.IdRef="Delay_3" />
-              <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[bool_fileexists]" sap:VirtualizedContainerService.HintSize="529.6,148" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString+&quot;\&quot;+&quot;DTOE table.csv&quot;]" PathType="File" />
-              <If Condition="[bool_fileexists]" DisplayName="If Condition for UseCase2 - CMD Notifications" sap:VirtualizedContainerService.HintSize="529.6,740.8" sap2010:WorkflowViewState.IdRef="If_2">
+              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="530,122" sap2010:WorkflowViewState.IdRef="Delay_3" />
+              <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[bool_fileexists]" sap:VirtualizedContainerService.HintSize="530,147" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString+&quot;\&quot;+&quot;DTOE table.csv&quot;]" PathType="File" />
+              <If Condition="[bool_fileexists]" DisplayName="If Condition for UseCase2 - CMD Notifications" sap:VirtualizedContainerService.HintSize="530,794" sap2010:WorkflowViewState.IdRef="If_2">
                 <If.Then>
-                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,545.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,543" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;File Exists in Shared Path&quot;]" />
-                    <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;File Exists in Shared Path&quot;]" />
+                    <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[str_DTOE_FilePath]</OutArgument>
                       </Assign.To>
@@ -561,11 +562,11 @@
                         <InArgument x:TypeArguments="x:String">[in_Config("DTOE_NetworkSharePath").ToString+"/DTOE table_" + Today.ToString("yyyy-MM-dd") + ".csv"]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:RenameFileX DisplayName="Rename File for UseCase2" FilePath="[path.Combine(in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString,&quot;DTOE table.csv&quot;)]" sap:VirtualizedContainerService.HintSize="433.6,167.2" sap2010:WorkflowViewState.IdRef="RenameFileX_2" KeepExtension="False" NewName="[str_DTOE_FilePath]" />
+                    <ui:RenameFileX DisplayName="Rename File for UseCase2" FilePath="[path.Combine(in_Config(&quot;DTOE_NetworkSharePath&quot;).ToString,&quot;DTOE table.csv&quot;)]" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="RenameFileX_2" KeepExtension="False" NewName="[str_DTOE_FilePath]" />
                   </Sequence>
                 </If.Then>
                 <If.Else>
-                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,81" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -576,15 +577,15 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <ui:CommentOut DisplayName="UNCOMMENT WHEN GO-LIVE!" sap:VirtualizedContainerService.HintSize="529.6,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+              <ui:CommentOut DisplayName="UNCOMMENT WHEN GO-LIVE!" sap:VirtualizedContainerService.HintSize="530,84" sap2010:WorkflowViewState.IdRef="CommentOut_4">
                 <ui:CommentOut.Body>
-                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,306.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,305" sap2010:WorkflowViewState.IdRef="Sequence_14">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="FPPS/DTOE" sap:VirtualizedContainerService.HintSize="353.6,217.6" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="[in_Config(&quot;OrchestratorQueueName&quot;).ToString]">
+                    <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="FPPS/DTOE" sap:VirtualizedContainerService.HintSize="354,217" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="[in_Config(&quot;OrchestratorQueueName&quot;).ToString]">
                       <ui:AddQueueItem.ItemInformation>
                         <InArgument x:TypeArguments="x:String" x:Key="DTOE_FilePath">[str_DTOE_FilePath]</InArgument>
                         <InArgument x:TypeArguments="x:String" x:Key="DetailReport_FilePath">[str_DetailReport_FilePath]</InArgument>
@@ -599,13 +600,13 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
-              <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="FPPS/DTOE" sap:VirtualizedContainerService.HintSize="529.6,226.4" sap2010:WorkflowViewState.IdRef="AddQueueItem_2" Priority="Normal" QueueType="[in_Config(&quot;OrchestratorQueueName&quot;).ToString]">
+              <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item - CHANGE VALUES TO ACTUALS FOR GO-LIVE!" FolderPath="FPPS/DTOE" sap:VirtualizedContainerService.HintSize="530,226" sap2010:WorkflowViewState.IdRef="AddQueueItem_2" Priority="Normal" QueueType="[in_Config(&quot;OrchestratorQueueName&quot;).ToString]">
                 <ui:AddQueueItem.ItemInformation>
-                  <InArgument x:TypeArguments="x:String" x:Key="DTOE_FilePath">[str_DTOE_FilePath]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="DTOE_FilePath">S:\Shared\00_FPPS Automations\TIOS_DTOE Project Extract\02_Development Builds\Combined Report\DTOE table_2025-02-11.csv</InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="DetailReport_FilePath">S:\Shared\00_FPPS Automations\TIOS_DTOE Project Extract\02_Development Builds\Combined Report\detail export_2025-02-11.csv</InArgument>
                 </ui:AddQueueItem.ItemInformation>
               </ui:AddQueueItem>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="529.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/site/QA/home" CVScreenId="4550a357-931a-480f-9a80-0793de7982fb" CvElementArea="1856, 121, 37, 37" CvTextArea="1869, 133, 11, 14" CvType="Icon" DesignTimeRectangle="1858, 123, 34, 34" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='Show account menu' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aaname='Show account menu' type='' class='fvdansu fve3se6 low-density' check:text='S' /&gt;" Guid="3d97d651-1b5f-4416-804e-9785cd85c330" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMxSURBVFhH7ZjfS1NhGMf7e7qxwiKiLspdWN1EXVhaaVJBJmUXmqaWls40tJGF5S5clBFhWOTuVEwwmgvcRZKEC4OpzB/p5nFuy/x2nuMxd7ZnZ+edG3ThB74MzjnP83zZ++O859mB/5RtY6IkbazPOYqy1lc4efMhjhTVYffZCuw5dwtZRfU4VW5R7vV/GVWfFkfI2KIUQNOLD8g8X4mdOaWGtK+gWomhWBEMGQv/XkVHz0fsL7zNFjciirX1DCq5jJDQ2FJgBRfuPmWLJaPiBx1KzkToGvsxOYNjJU1sga3o+I0muD1etQpPXGO//BKyrzeyiVOhoyWNmPdJarVYWGPh1VWcqWplE6ZSedVPlFocrLH2d/1sonSIanHEGKO/NzO/ik2SDu0tqMLc4pJafZMYYzXtXWyCdIpqRqMx5l9eQUZuORucTmXklSu1I9EY6x3+ygbqyWQdgVsKqxkA38w4nlvM7LN6otqRaIwJD2OtE+5QAI7OFvVaCyoGJuELedFdG/VsAkUPp8ZYTuUjNiiuBuRN0uOMum6GddQLh11su6HakWiMZV2tZ4Piyj4JSONoKGbuCYpqR6IxRpOQC4ovK7o98vwKzcM11I+KMu4ZY6LakWzRGMmMfJsTDk8AQTlHcGYC3daNOWdcusaEhzJaxW1oGPLCB3lB2MRWpu5QCk9++d8yMfMrf3ieWRT60p38otuF9XsYsyOvY++xq1VfutuF8AZrXt/HXPaXMKnXTJZBuOQN1z3QFvu8jgZHxlQX62iMKa8kwQVgsnyCa4HO82EEQ/KP5Me3obf/jBoRvQajj9waY4Tw7p8CRQ8jEWNsdsGPXfKnGJcgHaJaho49hNn2nk2SDjV32tWqWlhj9BVzorSZTZRKna5sxUpo82QSCWuMmJ5bxOErdWzCVCj72n3lgycecY0RYxNTytGXS7wVHbh4Bz+nZ9UqPLrGiAX/MnKrH7MFklHhvWdKzkQkNEb8WVtDV58Dhy7XssWM6OClGrzp/azkMoIhYxtIgaCyikSbKhRDsSIIGYuEWkzUaqKWE7WeqAVFrShqSVFriu5RqypZkjaWbraNiQH8BUzSaIq1+ZvBAAAAAElFTkSuQmCC" InformativeScreenshot="d36bbf77d0794f08d99a67f63072a1e7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home - Tableau Server' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
@@ -620,7 +621,7 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Switch User'" sap:VirtualizedContainerService.HintSize="529.6,218.4" sap2010:WorkflowViewState.IdRef="NClick_28" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Switch User'" sap:VirtualizedContainerService.HintSize="530,218" sap2010:WorkflowViewState.IdRef="NClick_28" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/site/QA/home" CVScreenId="71f51349-3eea-41d0-88d1-4a2bf5be0aee" CvElementArea="1737, 259, 149, 26" CvTextArea="1743, 265, 67, 12" CvTextArgument="Switch User" CvType="Button" DesignTimeRectangle="1744, 260, 135, 24" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Switch User' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Switch User' tag='SPAN' type='' class='frvoegc' check:text='Switch User' /&gt;" Guid="39af97cd-db23-4c5e-b611-1862704b4811" InformativeScreenshot="6fb3a5221bb49f0918669ca1b4178b54.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home - Tableau Server' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
