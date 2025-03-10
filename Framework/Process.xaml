@@ -337,7 +337,7 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export' Type Icon" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click 'Export' Type Icon" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/uwmedxauvxvt/Development/orchestrator_/assets?tid=9863&amp;fid=1407598&amp;index=0&amp;size=20&amp;state=M4ewTgLgPgZglgUwDYBMoDsCGBbBUVxgIDGEcI6UmwxAevQCQAMUDAjFAExQDMUALAF1BQA%3D" DesignTimeRectangle="1718, 152, 49, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='Download' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aaname='Download' type='' class='dropdown-button fnpu4hw' check:text='Download' /&gt;" Guid="c5bb7fdf-a1e5-4e96-8876-42c762ea189d" InformativeScreenshot="f6f9fa08245bf0d266e6b1779e1c28c5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UWP* - Tableau Server' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
@@ -449,7 +449,7 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export' Type Icon" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click 'Export' Type Icon" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/uwmedxauvxvt/Development/orchestrator_/assets?tid=9863&amp;fid=1407598&amp;index=0&amp;size=20&amp;state=M4ewTgLgPgZglgUwDYBMoDsCGBbBUVxgIDGEcI6UmwxAevQCQAMUDAjFAExQDMUALAF1BQA%3D" DesignTimeRectangle="1382, 152, 49, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' innertext='Download' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' innertext='Download' type='' class='dropdown-button fnpu4hw' aaname='Download' check:text='Download' /&gt;" Guid="c5bb7fdf-a1e5-4e96-8876-42c762ea189d" InformativeScreenshot="e357a6634f16e4902177cf919aaf160f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UWP* - Tableau Server' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
@@ -577,18 +577,24 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <ui:CommentOut DisplayName="UNCOMMENT WHEN GO-LIVE!" sap:VirtualizedContainerService.HintSize="530,84" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+              <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="FPPS/DTOE" sap:VirtualizedContainerService.HintSize="530,226" sap2010:WorkflowViewState.IdRef="AddQueueItem_3" Priority="Normal" QueueType="[in_Config(&quot;OrchestratorQueueName&quot;).ToString]">
+                <ui:AddQueueItem.ItemInformation>
+                  <InArgument x:TypeArguments="x:String" x:Key="DTOE_FilePath">[str_DTOE_FilePath]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="DetailReport_FilePath">[str_DetailReport_FilePath]</InArgument>
+                </ui:AddQueueItem.ItemInformation>
+              </ui:AddQueueItem>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="530,84" sap2010:WorkflowViewState.IdRef="CommentOut_5">
                 <ui:CommentOut.Body>
-                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,305" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,305" sap2010:WorkflowViewState.IdRef="Sequence_15">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="FPPS/DTOE" sap:VirtualizedContainerService.HintSize="354,217" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="[in_Config(&quot;OrchestratorQueueName&quot;).ToString]">
+                    <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item - CHANGE VALUES TO ACTUALS FOR GO-LIVE!" FolderPath="FPPS/DTOE" sap:VirtualizedContainerService.HintSize="354,217" sap2010:WorkflowViewState.IdRef="AddQueueItem_2" Priority="Normal" QueueType="[in_Config(&quot;OrchestratorQueueName&quot;).ToString]">
                       <ui:AddQueueItem.ItemInformation>
-                        <InArgument x:TypeArguments="x:String" x:Key="DTOE_FilePath">[str_DTOE_FilePath]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="DetailReport_FilePath">[str_DetailReport_FilePath]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="DTOE_FilePath">S:\Shared\00_FPPS Automations\TIOS_DTOE Project Extract\02_Development Builds\Combined Report\DTOE table_2025-02-11.csv</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="DetailReport_FilePath">S:\Shared\00_FPPS Automations\TIOS_DTOE Project Extract\02_Development Builds\Combined Report\detail export_2025-02-11.csv</InArgument>
                       </ui:AddQueueItem.ItemInformation>
                     </ui:AddQueueItem>
                   </Sequence>
@@ -600,12 +606,6 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
-              <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item - CHANGE VALUES TO ACTUALS FOR GO-LIVE!" FolderPath="FPPS/DTOE" sap:VirtualizedContainerService.HintSize="530,226" sap2010:WorkflowViewState.IdRef="AddQueueItem_2" Priority="Normal" QueueType="[in_Config(&quot;OrchestratorQueueName&quot;).ToString]">
-                <ui:AddQueueItem.ItemInformation>
-                  <InArgument x:TypeArguments="x:String" x:Key="DTOE_FilePath">S:\Shared\00_FPPS Automations\TIOS_DTOE Project Extract\02_Development Builds\Combined Report\DTOE table_2025-02-11.csv</InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="DetailReport_FilePath">S:\Shared\00_FPPS Automations\TIOS_DTOE Project Extract\02_Development Builds\Combined Report\detail export_2025-02-11.csv</InArgument>
-                </ui:AddQueueItem.ItemInformation>
-              </ui:AddQueueItem>
               <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="530,225" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed812d6a-5fe0-43c6-a864-7ae8bfe671b6" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://tabdev.uwmedicine.org/#/site/QA/home" CVScreenId="4550a357-931a-480f-9a80-0793de7982fb" CvElementArea="1856, 121, 37, 37" CvTextArea="1869, 133, 11, 14" CvType="Icon" DesignTimeRectangle="1858, 123, 34, 34" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='Show account menu' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aaname='Show account menu' type='' class='fvdansu fve3se6 low-density' check:text='S' /&gt;" Guid="3d97d651-1b5f-4416-804e-9785cd85c330" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMxSURBVFhH7ZjfS1NhGMf7e7qxwiKiLspdWN1EXVhaaVJBJmUXmqaWls40tJGF5S5clBFhWOTuVEwwmgvcRZKEC4OpzB/p5nFuy/x2nuMxd7ZnZ+edG3ThB74MzjnP83zZ++O859mB/5RtY6IkbazPOYqy1lc4efMhjhTVYffZCuw5dwtZRfU4VW5R7vV/GVWfFkfI2KIUQNOLD8g8X4mdOaWGtK+gWomhWBEMGQv/XkVHz0fsL7zNFjciirX1DCq5jJDQ2FJgBRfuPmWLJaPiBx1KzkToGvsxOYNjJU1sga3o+I0muD1etQpPXGO//BKyrzeyiVOhoyWNmPdJarVYWGPh1VWcqWplE6ZSedVPlFocrLH2d/1sonSIanHEGKO/NzO/ik2SDu0tqMLc4pJafZMYYzXtXWyCdIpqRqMx5l9eQUZuORucTmXklSu1I9EY6x3+ygbqyWQdgVsKqxkA38w4nlvM7LN6otqRaIwJD2OtE+5QAI7OFvVaCyoGJuELedFdG/VsAkUPp8ZYTuUjNiiuBuRN0uOMum6GddQLh11su6HakWiMZV2tZ4Piyj4JSONoKGbuCYpqR6IxRpOQC4ovK7o98vwKzcM11I+KMu4ZY6LakWzRGMmMfJsTDk8AQTlHcGYC3daNOWdcusaEhzJaxW1oGPLCB3lB2MRWpu5QCk9++d8yMfMrf3ieWRT60p38otuF9XsYsyOvY++xq1VfutuF8AZrXt/HXPaXMKnXTJZBuOQN1z3QFvu8jgZHxlQX62iMKa8kwQVgsnyCa4HO82EEQ/KP5Me3obf/jBoRvQajj9waY4Tw7p8CRQ8jEWNsdsGPXfKnGJcgHaJaho49hNn2nk2SDjV32tWqWlhj9BVzorSZTZRKna5sxUpo82QSCWuMmJ5bxOErdWzCVCj72n3lgycecY0RYxNTytGXS7wVHbh4Bz+nZ9UqPLrGiAX/MnKrH7MFklHhvWdKzkQkNEb8WVtDV58Dhy7XssWM6OClGrzp/azkMoIhYxtIgaCyikSbKhRDsSIIGYuEWkzUaqKWE7WeqAVFrShqSVFriu5RqypZkjaWbraNiQH8BUzSaIq1+ZvBAAAAAElFTkSuQmCC" InformativeScreenshot="d36bbf77d0794f08d99a67f63072a1e7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home - Tableau Server' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
